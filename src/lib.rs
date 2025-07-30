@@ -1326,4 +1326,13 @@ impl ProgramTestContext {
             .working_bank()
             .register_hard_fork(hard_fork_slot)
     }
+
+    /// Register recent blockhash
+    pub fn register_recent_blockhash(&self, blockhash: &Hash, lamports_per_signature: Option<u64>) {
+        self.bank_forks
+            .write()
+            .unwrap()
+            .working_bank()
+            .register_recent_blockhash_for_test(blockhash, lamports_per_signature);
+    }
 }

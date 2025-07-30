@@ -26,6 +26,10 @@ readme = false
 license = "Apache-2.0"
 repository = "https://github.com/anza-xyz/agave"
 
+[features]
+default = ["dev-context-only-utils"]
+dev-context-only-utils = []
+
 [lib]
 name = "solana_program_test"
 path = "src/lib.rs"
@@ -156,6 +160,7 @@ version = "=2.2.20"
 
 [dependencies.solana-runtime]
 version = "=2.2.20"
+features = ["dev-context-only-utils"]
 
 [dependencies.solana-sbpf]
 version = "=0.10.1"

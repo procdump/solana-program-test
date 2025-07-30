@@ -9,5 +9,5 @@ It is intended to be used in [liteSVM](https://github.com/LiteSVM/litesvm) to fa
  - Modify **ProgramTest** to support `sol_get_processed_sibling_instruction`
  - Make **ProgramTest** payer configurable
  - Modify `get_invoke_context` to be public
-
+ - Add a new method to **ProgramTestContext** for registering a recent blockhash
 <hr/>
